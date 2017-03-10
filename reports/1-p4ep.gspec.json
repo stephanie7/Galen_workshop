@@ -1,0 +1,83 @@
+{
+  "testId" : "1-p4ep.gspec",
+  "name" : "p4ep.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  p4ep.gspec --url http:localhost:3000/property --size 1024x768 --htmlreport reports --include desktop -Dwebdriver.chrome.driver=/usr/local/lib/node_modules/galenframework-cli/node_modules/chromedriver/lib/chromedriver/chromedriver",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: p4ep.gspec included tags: desktop",
+          "status" : "info",
+          "time" : 1484879000713,
+          "includedTags" : [ "desktop" ],
+          "sections" : [ {
+            "name" : "P4ep index",
+            "place" : {
+              "filePath" : "p4ep.gspec",
+              "lineNumber" : 6
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "p4ep.gspec",
+                  "lineNumber" : 8
+                },
+                "name" : "height   ~157px",
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "p4ep.gspec",
+                  "lineNumber" : 9
+                },
+                "name" : "centered horizontally inside screen",
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "p4ep.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "height 40px",
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "p4ep.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "width  232px",
+                "highlight" : [ "logo" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "header" : {
+              "area" : [ 0, 0, 1024, 157 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1024, 1546 ]
+            },
+            "logo" : {
+              "area" : [ 397, 34, 232, 40 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1484878999961,
+        "type" : "node"
+      } ],
+      "time" : 1484878991801,
+      "type" : "node"
+    } ]
+  }
+}

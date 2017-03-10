@@ -1,0 +1,25 @@
+{
+  "testId" : "2-home-page-on-devicename-device",
+  "name" : "Home page on $(deviceName) device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://localhost:3000/property/  768x1024",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check p4ep.gspec --include \"ipad\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "SyntaxException: Cannot parse range value: \"\"\n    in p4ep.gspec:12",
+          "status" : "error",
+          "time" : 1486196435769,
+          "stacktrace" : "com.galenframework.parser.SyntaxException: Cannot parse range value: \"\"\n    in p4ep.gspec:12\n\tat com.galenframework.parser.ExpectRangeValue.read(ExpectRangeValue.java:59)\n\tat com.galenframework.parser.ExpectRange.read(ExpectRange.java:42)\n\tat com.galenframework.parser.ExpectRange.read(ExpectRange.java:25)\n\tat com.galenframework.speclang2.specs.SpecWithRangeProcessor.process(SpecWithRangeProcessor.java:30)\n\tat com.galenframework.speclang2.specs.SpecReader.read(SpecReader.java:115)\n\tat com.galenframework.speclang2.pagespec.PageSectionProcessor.processSpec(PageSectionProcessor.java:220)\n\tat com.galenframework.speclang2.pagespec.PageSectionProcessor.processObject(PageSectionProcessor.java:191)\n\tat com.galenframework.speclang2.pagespec.PageSectionProcessor.processSection(PageSectionProcessor.java:75)\n\tat com.galenframework.speclang2.pagespec.PageSectionProcessor.process(PageSectionProcessor.java:63)\n\tat com.galenframework.speclang2.pagespec.PostProcessor.processNode(PostProcessor.java:39)\n\tat com.galenframework.speclang2.pagespec.PostProcessor.process(PostProcessor.java:33)\n\tat com.galenframework.speclang2.pagespec.PageSpecReader.read(PageSpecReader.java:62)\n\tat com.galenframework.speclang2.pagespec.PageSpecReader.read(PageSpecReader.java:45)\n\tat com.galenframework.api.Galen.checkLayout(Galen.java:68)\n\tat com.galenframework.api.Galen.checkLayout(Galen.java:59)\n\tat com.galenframework.suite.actions.GalenPageActionCheck.execute(GalenPageActionCheck.java:53)\n\tat com.galenframework.runner.GalenPageRunner.executeAction(GalenPageRunner.java:84)\n\tat com.galenframework.runner.GalenPageRunner.run(GalenPageRunner.java:76)\n\tat com.galenframework.runner.GalenBasicTestRunner.runTest(GalenBasicTestRunner.java:76)\n\tat com.galenframework.tests.GalenBasicTest.execute(GalenBasicTest.java:55)\n\tat com.galenframework.TestRunnable.runTest(TestRunnable.java:75)\n\tat com.galenframework.TestRunnable.run(TestRunnable.java:101)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\nCaused by: java.lang.NumberFormatException: For input string: \"\"\n\tat java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.lang.Integer.parseInt(Integer.java:592)\n\tat java.lang.Integer.parseInt(Integer.java:615)\n\tat com.galenframework.specs.RangeValue.parseRangeValue(RangeValue.java:164)\n\tat com.galenframework.parser.ExpectRangeValue.read(ExpectRangeValue.java:56)\n\t... 24 more\n",
+          "type" : "node"
+        } ],
+        "time" : 1486196435742,
+        "type" : "node"
+      } ],
+      "time" : 1486196429932,
+      "type" : "node"
+    } ]
+  }
+}

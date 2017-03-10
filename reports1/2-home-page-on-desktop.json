@@ -1,0 +1,89 @@
+{
+  "testId" : "2-home-page-on-desktop",
+  "name" : "Home page on desktop",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://localhost:3000/property  1024x768",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "wait 20s until exist \"css: .rui-header img\"",
+        "status" : "info",
+        "time" : 1484900704325,
+        "type" : "node"
+      }, {
+        "name" : "check p4ep.gspec --include hehe",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: p4ep.gspec included tags: hehe",
+          "status" : "info",
+          "time" : 1484900705297,
+          "includedTags" : [ "hehe" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "P4ep index",
+            "place" : {
+              "filePath" : "p4ep.gspec",
+              "lineNumber" : 6
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "p4ep.gspec",
+                  "lineNumber" : 9
+                },
+                "name" : "height   ~157px",
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "p4ep.gspec",
+                  "lineNumber" : 10
+                },
+                "name" : "centered horizontally inside screen",
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "p4ep.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "height 40px",
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "p4ep.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "width  232px",
+                "highlight" : [ "logo" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "header" : {
+              "area" : [ 0, 0, 1024, 157 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1024, 1546 ]
+            },
+            "logo" : {
+              "area" : [ 397, 34, 232, 40 ]
+            }
+          },
+          "screenshot" : "layout-2-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1484900704837,
+        "type" : "node"
+      } ],
+      "time" : 1484900697512,
+      "type" : "node"
+    } ]
+  }
+}

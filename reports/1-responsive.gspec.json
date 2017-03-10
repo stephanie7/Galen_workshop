@@ -1,0 +1,123 @@
+{
+  "testId" : "1-responsive.gspec",
+  "name" : "responsive.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  responsive.gspec --url http:localhost:3333/reporting --size 1024x768 --htmlreport reports -Dwebdriver.chrome.driver=/usr/local/lib/node_modules/galenframework-cli/node_modules/chromedriver/lib/chromedriver/chromedriver",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: responsive.gspec included tags: ",
+          "status" : "error",
+          "time" : 1484900125205,
+          "sections" : [ {
+            "name" : "Builder profile",
+            "place" : {
+              "filePath" : "responsive.gspec",
+              "lineNumber" : 9
+            },
+            "objects" : [ {
+              "name" : "builder_profile.header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "responsive.gspec",
+                  "lineNumber" : 11
+                },
+                "name" : "text is \"Builder profile highlights\"",
+                "highlight" : [ "builder_profile.header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "responsive.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "inside builder_profile 0px left right, 40px top",
+                "highlight" : [ "builder_profile.header", "builder_profile" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "responsive.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "css font-size is \"17px\"",
+                "errors" : [ "\"builder_profile.header\" css property \"font-size\" is \"18px\" but should be \"17px\"" ],
+                "highlight" : [ "builder_profile.header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "responsive.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "css font-family starts \"Museo Sans Heavy\"",
+                "highlight" : [ "builder_profile.header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "responsive.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "css font-family ends \"sans-serif\"",
+                "highlight" : [ "builder_profile.header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "responsive.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "css font-family contains \"Helvetica Neue\"",
+                "highlight" : [ "builder_profile.header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "responsive.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "css color is \"rgb(51, 63, 72)\"",
+                "highlight" : [ "builder_profile.header" ]
+              } ]
+            }, {
+              "name" : "builder_profile.profile_view_image",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "responsive.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "width  35px",
+                "highlight" : [ "builder_profile.profile_view_image" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "responsive.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "height 35px",
+                "highlight" : [ "builder_profile.profile_view_image" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "builder_profile" : {
+              "area" : [ 227, 439, 769, 194 ]
+            },
+            "builder_profile.profile_view_image" : {
+              "area" : [ 227, 520, 35, 35 ]
+            },
+            "builder_profile.header" : {
+              "area" : [ 227, 479, 769, 22 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1484900124330,
+        "type" : "node"
+      } ],
+      "time" : 1484900116138,
+      "type" : "node"
+    } ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "testId" : "1-builder-page-test",
+  "name" : "Builder page test",
+  "report" : {
+    "nodes" : [ {
+      "name" : "selenium chrome https://secure.e2e.realestate.com.au/sign_in 768x1024",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "run login.js",
+        "status" : "info",
+        "time" : 1488778064870,
+        "type" : "node"
+      }, {
+        "name" : "wait 10s",
+        "status" : "info",
+        "time" : 1488778069484,
+        "type" : "node"
+      }, {
+        "name" : "check builder.gspec",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: builder.gspec included tags: ",
+          "status" : "info",
+          "time" : 1488778079923,
+          "includedTags" : [ ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "builder index",
+            "place" : {
+              "filePath" : "builder.gspec",
+              "lineNumber" : 5
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "builder.gspec",
+                  "lineNumber" : 7
+                },
+                "name" : "height   42px",
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "builder.gspec",
+                  "lineNumber" : 8
+                },
+                "name" : "centered horizontally inside screen",
+                "highlight" : [ "header", "screen" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "header" : {
+              "area" : [ 269, 34, 232, 42 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 768, 985 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1488778079489,
+        "type" : "node"
+      } ],
+      "time" : 1488778059213,
+      "type" : "node"
+    } ]
+  }
+}

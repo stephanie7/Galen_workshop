@@ -9,6 +9,9 @@ If you’re using NPM you can just install galen via the following command
 sudo npm install -g galenframework-cli
 ```
 #Run Test Commonds
+ ```
+open the geckdriver file in the iterm 
+```
 
 ```
 galen check demo.gspec --url "http:www.baidu.com" --size "1024x768" --htmlreport "report1"

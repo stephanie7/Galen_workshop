@@ -22,3 +22,11 @@ galen test p4ep.test --htmlreport "report2"
 ```
 galen test builder.test --htmlreport "report3"
 ```
+
+If something with your browser diriver, you can change the default driver:
+with the commond :
+```
+galen config
+```
+Change the browser to other browser: 
+It support: firefox, chrome, ie, phantomjs, edge
